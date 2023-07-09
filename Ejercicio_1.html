@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+<body> 
+    <form action="" method="post"> <input type="number" id="Valor1" placeholder="Ingresa un numero"><br>
+    <input type="number" id="valor2" placeholder="ingresa un numero"><br>
+<input type="radio" value="Sumar" name="operacion" onclick="sumar()">Sumar
+    <input type="radio" value="Restar" name="operacion" onclick="restar()">Restar
+    <input type="radio" value="Dividir" name="operacion" onclick="dividir()">Dividir
+    <input type="radio" value="Multiplicar" name="operacion" onclick="multiplicar()">Multiplicar</form>
+    
+    
+    
+
+   
+</body>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+<script>
+    function sumar(){
+    var x = parseInt(document.getElementById('Valor1').value)
+    var y = parseInt(document.getElementById('valor2').value)
+   const resultado = x+y ;
+   alert(resultado)
+}
+function restar(){
+    var x = parseInt(document.getElementById('Valor1').value)
+    var y = parseInt(document.getElementById('valor2').value)
+    const resultado = x-y ;
+    alert(resultado);
+
+}
+function dividir(){
+    var x = parseInt(document.getElementById('Valor1').value)
+    var y = parseInt(document.getElementById('valor2').value)
+    const resultado = x/y ;
+   alert(resultado) ;
+}
+function multiplicar(){
+    var x = parseInt(document.getElementById('Valor1').value)
+    var y = parseInt(document.getElementById('valor2').value)
+    const resultado = x*y ;
+   alert(resultado) ;
+
+}
+</script>
+</html>
